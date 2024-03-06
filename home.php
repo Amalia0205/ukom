@@ -69,16 +69,6 @@
 
 	<footer><b>@SMKN 5 KOTA BEKASI 2024</b></footer>
 
-	<?php
-if ($_SESSION->null) {
-	header("refresh:2; home.php");
-	# code...
-} else {
-	echo "gagal";
-}
-?>
-
-
 </body>
 
 <script>

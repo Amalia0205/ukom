@@ -96,7 +96,6 @@
 
 
 			if ($result-> num_rows > 0) {
-				$_SESSION['proses'] = $username;
 
 				# code...
 				header("refresh:2; home.php");
