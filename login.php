@@ -95,13 +95,15 @@
 			$result = $connect->query($query);
 
 
+			if ($result-> num_rows > 0) {
+				$_SESSION['proses'] = $username;
 
-			if ($result) {
+				# code...
 				header("refresh:2; home.php");
 
 				# code...
 			}else{
-				echo "gagal";
+				echo "tak ada data";
 			}
 		}
 		# code...

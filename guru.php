@@ -6,7 +6,7 @@
 	<title>WEB SEKOLAH SMKN 5 KOTA BEKASI</title>
 	<style>
 		body{
-			background-color: #fff;
+			background-color: #E6E6E6;
 			text-align: center;
 			font-family: helvetica;
 		}
@@ -17,66 +17,71 @@
 
 		}
 
-		section{
-			background-color: #E6E6E6;
-			margin-top: 40px;
-			margin-right: 20%;
-			margin-left: 20%;
-			border-radius: 15px;
-			padding: 35px;
+		.container{
+			background-color: #FFF2CC;
+			border-radius: 75px;
 			border: 5px black;
-			border-color: ;
+			margin-left: 30%;
+			margin-right: 30%;
+			padding-top: 25px;
+			padding-bottom: 30px;
+			
 		}
 
 		label{
 			margin-bottom: 5px;
+			font-size: 18px;
 		}
 
 		input[type="text"]{
 			border: 1px black;
-			border-radius: 5px;
-			padding: 10px;
-			width: 50%;
+			border-radius: 10px;
+			padding: 15px;
+			width: 70%;
+
 		}
 
 		input[type="password"]{
 			border: 1px black;
-			border-radius: 5px;
-			padding: 10px;
-			width: 50%;
+			border-radius: 10px;
+			padding: 15px;
+			width: 100%;
 		
 		}
 
 		input[type="date"]{
 			border: 1px black;
-			border-radius: 5px;
-			padding: 10px;
-			width: 50%;
+			border-radius: 10px;
+			padding: 15px;
+			width: 100%;
 		
 		}
 
 		input[type="submit"]{
 			border: 1px black;
 			border-radius: 8px;
-			padding: 10px;
-			width: 15%;
+			padding: 15px;
+			width: 55%;
+			background-color: #FFE599;
+		}
+
+		button{
+			border: 1px black;
+			border-radius: 8px;
+			padding: 15px;
+			width: 55%;
 			background-color: #FFE599;
 		}
 
 		footer{
 			background-color: #FFE599;
 			padding: 25px;
-			position: flex;
+			position: absolute;
 		
 	</style>
 </head>
 <body>
 
-	<header>
-		<h1>WELCOME TO SMKN 5 KOTA BEKASI</h1>
-	</header>
-
-	<section>
 
 <?php
 
@@ -121,61 +126,64 @@
 		<h1>WELCOME TO SMKN 5 KOTA BEKASI</h1>
 	</header>
 
-	<section>
+	
 
 	<form method="POST">
+		<div class="container">
 		<h2>SILAHKAN REGISTER TERLEBIH DAHULU</h2>
 		<label><b>NIP:</b></label><br>
-		<input type="text" name="nip" autocomplete="off" placeholder="Masukkan Password">
+		<input type="text" name="nip" autocomplete="off" placeholder="Masukkan NIP">
 		<br><br>
 		<label><b>NAMA:</b></label><br>
-		<input type="text" name="nama" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="nama" autocomplete="off" placeholder="Masukkan Nama">
 		<br>
 		<br><label><b>TEMPAT LAHIR:</b></label><br>
-		<input type="text" name="tempat_lahir" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="tempat_lahir" autocomplete="off" placeholder="Masukkan Tempat lahir">
 		<br>
 		<br>
 		<label><b>TANGGAL LAHIR:</b></label><br>
-		<input type="text" name="tanggal_lahir" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="tanggal_lahir" autocomplete="off" placeholder="Masukkan Tanggal lahir">
 		<br>
 		<br><label><b>AGAMA:</b></label><br>
-		<input type="text" name="agama" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="agama" autocomplete="off" placeholder="Masukkan Agama">
 		<br>
 		<br>
 		<label><b>MAPEL:</b></label><br>
-		<input type="text" name="mapel" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="mapel" autocomplete="off" placeholder="Masukkan Mapel">
 		<br>
 		<br>
 		<label><b>ALAMAT:</b></label><br>
-		<input type="text" name="alamat" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="alamat" autocomplete="off" placeholder="Masukkan Alamat">
 		<br>
 		<br>
 		<label><b>NAMA PT:</b></label><br>
-		<input type="text" name="nama_pt" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="nama_pt" autocomplete="off" placeholder="Masukkan Nama PT">
 		<br>
 		<br>
 		<label><b>IJAZAH:</b></label><br>
-		<input type="text" name="ijazah" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="ijazah" autocomplete="off" placeholder="Masukkan Ijazah">
 		<br>
 		<br>
 		<label><b>LULUS:</b></label><br>
-		<input type="text" name="lulus" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="lulus" autocomplete="off" placeholder="Masukkan Lulus">
 		<br>
 		<br>
 		<label><b>GOLONGAN:</b></label><br>
-		<input type="text" name="golongan" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="golongan" autocomplete="off" placeholder="Masukkan Golongan">
 		<br>
 		<br>
 		<label><b>KETERANGAN:</b></label><br>
-		<input type="text" name="ket" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="ket" autocomplete="off" placeholder="Masukkan Keterangan">
 		<br>
 		<br>
 		<label><b>JENIS KELAMIN:</b></label><br>
-		<input type="text" name="jenis_kelamin" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="jenis_kelamin" autocomplete="off" placeholder="Masukkan Jenis kelamin">
 		<br>
 		<br>
 		<input type="submit" name="submit" value="TAMBAH DATA">	
-	</section>
 
+	</form>
+	</div>
+	
 </body>
 </html>

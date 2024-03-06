@@ -65,10 +65,18 @@
 			background-color: #FFE599;
 		}
 
+		button{
+			border: 1px black;
+			border-radius: 8px;
+			padding: 15px;
+			width: 55%;
+			background-color: #FFE599;
+		}
+
 		footer{
 			background-color: #FFE599;
 			padding: 25px;
-			position: flex;
+			position: absolute;
 		
 	</style>
 </head>
@@ -127,50 +135,54 @@
 		<div class="container">
 		<h2>DATA SISWA</h2>
 		<label><b>NIS:</b></label><br>
-		<input type="text" name="nis" autocomplete="off" placeholder="Masukkan Password">
+		<input type="text" name="nis" autocomplete="off" placeholder="Masukkan NIS">
 		<br><br>
 		<label><b>NAMA:</b></label><br>
-		<input type="text" name="nama" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="nama" autocomplete="off" placeholder="Masukkan Nama">
 		<br>
 		<br><label><b>TEMPAT LAHIR:</b></label><br>
-		<input type="text" name="tempat_lahir" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="tempat_lahir" autocomplete="off" placeholder="Masukkan Tempat Lahir">
 		<br>
 		<br>
 		<label><b>TANGGAL LAHIR:</b></label><br>
-		<input type="text" name="tanggal_lahir" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="tanggal_lahir" autocomplete="off" placeholder="Masukkan Tanggal lahir">
 		<br>
 		<br>
 		<label><b>JENIS KELAMIN:</b></label><br>
-		<input type="text" name="jenis_kelamin" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="jenis_kelamin" autocomplete="off" placeholder="Masukkan Jenis Kelamin">
 		<br>
 		<br>
 		<label><b>AGAMA:</b></label><br>
-		<input type="text" name="agama" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="agama" autocomplete="off" placeholder="Masukkan Agama">
 		<br>
 		<br>
 		<label><b>NAMA AYAH:</b></label><br>
-		<input type="text" name="ayah" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="ayah" autocomplete="off" placeholder="Masukkan Nama ayah">
 		<br>
 		<br>
 		<label><b>NAMA IBU:</b></label><br>
-		<input type="text" name="ibu" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="ibu" autocomplete="off" placeholder="Masukkan Nama Ibu">
 		<br>
 		<br>
 		<label><b>PEKERJAAN AYAH:</b></label><br>
-		<input type="text" name="kerja_ayah" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="kerja_ayah" autocomplete="off" placeholder="Masukkan Pekerjaan">
 		<br>
 		<br>
 		<label><b>PEKERJAAN IBU:</b></label><br>
-		<input type="text" name="kerja_ibu" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="kerja_ibu" autocomplete="off" placeholder="Masukkan Pekerjaan">
 		<br>
 		<br>
 		<label><b>ALAMAT:</b></label><br>
-		<input type="text" name="alamat" autocomplete="off" placeholder="Masukkan Username">
+		<input type="text" name="alamat" autocomplete="off" placeholder="Masukkan Alamat">
 		<br>
 		<br>
 		
 		<input type="submit" name="submit" value="TAMBAH DATA">	
+		<br>
+		<br>
+		
 	</form>
+	<a href="home.php"><button>DATA GURU</button></a>
 </div>
 
 </body>

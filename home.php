@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +12,7 @@
 			background-color: #fff;
 			text-align: center;
 			font-family: helvetica;
-			font-size: 25px;
-			
+
 		}
 
 		header{
@@ -44,7 +46,7 @@
 		footer{
 			background-color: #FFE599;
 			padding: 25px;
-			position: flex;
+			
 
 
 		
@@ -58,8 +60,8 @@
 
 	<section>
 
-		<a href="login.php"><button>Sebagai Siswa sekolah</button></a>
-		<a href="login.php"><button>Sebagai Wali Murid</button></a>
+		<a href="guru.php"><button>Guru</button></a>
+		<a href="siswa.php"><button>Siswa</button></a>
 		
 	</form>
 
@@ -67,5 +69,21 @@
 
 	<footer><b>@SMKN 5 KOTA BEKASI 2024</b></footer>
 
+	<?php
+if ($_SESSION->null) {
+	header("refresh:2; home.php");
+	# code...
+} else {
+	echo "gagal";
+}
+?>
+
+
 </body>
+
+<script>
+ 
+
+
+</script>
 </html>
